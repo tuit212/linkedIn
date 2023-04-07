@@ -25,14 +25,16 @@ html{
     --color-text1: rgba(0 , 0 , 0, 0.25);
     --color-border : rgba(52, 86, 255, 0.5);
     --color-white : #ffffff;
+    --bg: #F8F8FA;
     --transition :  all 400ms ease ;
-    --container-width-lg: 75%;
+    --container-width-lg: 80%;
     --container-width-md: 86%;
     --container-width-ms: 90%;
 }
 
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: var(--bg);
 }
 
 .container{
@@ -44,10 +46,17 @@ h1 , h2 , h3 , h4 , h5 {
     font-weight: 500;
 }
 
+p{
+    font-weight: 400;
+}
+
 img {
     display: block;
     width: 100%;
     object-fit: cover;
+}
+section{
+    padding-top: 120px;
 }
 
 // media querie
