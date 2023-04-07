@@ -1,4 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import { AiFillHome , AiOutlineRight } from 'react-icons/ai'
+import { FaUsers } from 'react-icons/fa'
 import './Home.scss'
 
 
@@ -9,10 +12,51 @@ const Home = () => {
             <article className="home__pages-left">
                 <div className="top">
                     <div className="top__img">
-                        {/* <img src="https://images.pexels.com/photos/6390058/pexels-photo-6390058.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" /> */}
+                        <img src="https://images.pexels.com/photos/6390058/pexels-photo-6390058.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
                     </div>
                     <h2>Wawan Purwanto</h2>
                     <p> I have experince 1 year UI/UX Design </p>
+                    <div className="cards">
+                        <div>
+                            <h3>Profile Views</h3>
+                            <p>16+</p>
+                        </div>
+                        <div>
+                            <h3>Profile Post</h3>
+                            <p>400+</p>
+                        </div>
+                    </div>
+                    <div className="links">
+                        <div>
+                            <div className="link">
+                                <AiFillHome className='icon' />
+                            </div>
+                            <p>Saved</p>
+                        </div>
+                        <div>
+                            <div className="link">
+                                <AiFillHome className='icon' />
+                            </div>
+                            <p>Try Premium</p>
+                        </div>
+                    </div>
+                </div>
+                {/* left bottom */}
+                <div className="bottom">
+                    <div className="bottom-top">
+                        <div>
+                            <h2>Groups</h2>
+                            <Link  to='/mynetwork' className='icons'>
+                                <AiOutlineRight className='icon' />
+                            </Link>
+                        </div>
+                        <ul className="wrappers">
+                            <li className="wrapper">
+                                <FaUsers/>
+                                <p>UI/UX Design</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </article>
             {/* center */}
