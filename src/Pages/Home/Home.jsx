@@ -1,8 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { AiFillHome , AiOutlineRight } from 'react-icons/ai'
-import { FaUsers } from 'react-icons/fa'
+import { FaUsers , FaRegDotCircle } from 'react-icons/fa'
 import { BsFillCalendarDateFill , BsHash } from 'react-icons/bs'
+import message from '../../Assets/img/message.svg'
+import linked from '../../Assets/img/linkedIn.svg'
 import './Home.scss'
 
 
@@ -141,11 +143,60 @@ const Home = () => {
             </article>
             <article className="home__pages-right">
                 <div className="top">
-                    <div className="top__img">
-                        
+                    salom
+                </div>
+                <div className="top">
+                    salom
+                </div>
+                <div className="top three">
+                    <div className="img">
+                        <img src={linked} alt="" className='img__li' />
+                        <h3>LinkedIn Corporation © 2021</h3>
                     </div>
-                    <h2>Wawan Purwanto</h2>
-                    <p> I have experince 1 year UI/UX Design </p>
+                    <ul className="three__list">
+                        <div className="item">
+                            <div className="list">
+                                <FaRegDotCircle className='icon' />
+                                <p>About</p>
+                            </div>
+                            <div className="list">
+                                <FaRegDotCircle className='icon' />
+                                <p>Accesibility </p>
+                            </div>
+                            <div className="list">
+                                <FaRegDotCircle className='icon' />
+                                <p>Help Center</p>
+                            </div>
+                            <div className="list">
+                                <FaRegDotCircle className='icon' />
+                                <p>Privacy & Terms  </p>
+                            </div>
+                        </div>
+                        <div className="item">
+                            <div className="list">
+                                <FaRegDotCircle className='icon' />
+                                <p>Advertising </p>
+                            </div>
+                            <div className="list">
+                                <FaRegDotCircle className='icon' />
+                                <p>Business Services</p>
+                            </div>
+                            <div className="list">
+                                <FaRegDotCircle className='icon' />
+                                <p>Download Apps</p>
+                            </div>
+                            <div className="list">
+                                <FaRegDotCircle className='icon' />
+                                <p>
+                                    <Link to='/' className='more'>More</Link>
+                                </p>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+                <div className="top four ">
+                    <img src={message} alt="" className='four-icon' />
+                    <h3>Message</h3>
                 </div>
             </article>
         </div>

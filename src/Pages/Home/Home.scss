@@ -2,8 +2,8 @@
 
 .home__container{
     display: grid;
-    grid-template-columns: 25% 44% 25%;
-    gap: 3%;
+    grid-template-columns: 25% 46% 25%;
+    gap: 2%;
     position: relative;
 
     // left
@@ -227,6 +227,80 @@
             border-radius: 32px;
             padding: 40px 22px;
             background: var(--color-white);
+
+            &:nth-child(4){
+                margin-top: 10px;
+                @include center (flex , center , none);
+                gap: 1rem;
+
+                .four-icon{
+                    width: 32px;
+                }
+
+                h3{
+                    line-height: 110%;
+                    font-size: 14px;
+                    color: var(--color-text);
+                }
+            }
+
+            &:nth-child(3){
+                margin-top: 15px;
+
+                .img {
+                    @include center (flex , center , none);
+                    gap: 5px;
+
+                    &__li{
+                        width: 68px;
+                    }
+
+                    h3{
+                        line-height: 110%;
+                        font-size: 14px;
+                        color: var(--color-text);
+                    }
+                }
+
+                .three__list{
+                    display: grid;
+                    margin-top: 28px;
+                    grid-template-columns: 1fr 1fr;
+
+                    .item {
+                        @include center (flex , none , none);
+                        flex-direction: column;
+                        gap: 10px;
+
+                        .list{
+                            @include center (flex , center , none);
+                            gap: 5px;
+                        }
+
+                        .icon{
+                            color: var(--color-bg);
+                        }
+
+                        p{
+                            line-height: 14px;
+                            font-size: 12px;
+                            color: var(--color-text);
+                        }
+
+                        .more{
+                            color: #4FCB8D;
+                        }
+                    }
+                }
+            }
+        }
+
+        .four{
+            padding: 7px 29px;
+        }
+
+        .three{
+            padding: 37px 18px;
         }
     }
 }
