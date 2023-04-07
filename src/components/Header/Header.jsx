@@ -4,6 +4,10 @@ import { BiSearchAlt2 } from 'react-icons/bi'
 import logo from '../../Assets/img/logo.svg'
 import './Header.scss'
 import Navbar from '../Navbar/Navbar'
+import Acount from '../Acount/Acount'
+
+// account
+
 
 const Header = () => {
   return (
@@ -18,7 +22,7 @@ const Header = () => {
             </div>
             <Navbar/>
             <span className="line"></span>
-            
+            <Acount/>
         </div>
     </header>
   )

@@ -5,6 +5,8 @@ import { FaUserFriends } from 'react-icons/fa'
 import { HiBriefcase } from 'react-icons/hi'
 import { BiMessageDetail } from 'react-icons/bi'
 import { IoNotificationsSharp } from 'react-icons/io5'
+import Badge from '@mui/material/Badge';
+
 
 const Navbar = () => {
   return (
@@ -21,9 +23,9 @@ const Navbar = () => {
         <NavLink to='/messaging' className='navlink'>
             <BiMessageDetail className='icon' />
         </NavLink>
-        <NavLink to='/notifications' className='navlink'>
+        <Badge badgeContent={1} className='navlink' color="primary">
             <IoNotificationsSharp className='icon' />
-        </NavLink>
+        </Badge>
     </nav>
   )
 }
