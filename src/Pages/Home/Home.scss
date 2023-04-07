@@ -1,3 +1,5 @@
+@import '../../Assets/sass/general.scss';
+
 .home__container{
     display: grid;
     grid-template-columns: 25% 44% 25%;
@@ -5,11 +7,7 @@
     position: relative;
 
     // left
-
     .home__pages-left{
-        // max-width: 282px;
-        // width: 100%;
-        // position: fixed;
 
         .top{
             width: 100%;
@@ -78,8 +76,7 @@
                 justify-items: center;
 
                 div{
-                    display: flex;
-                    align-items: center;
+                    @include center (flex , center , none);
                     gap: 5px;
 
                     .link{
@@ -117,10 +114,12 @@
 
             .bottom-top{
 
+                &:nth-child(2) , &:nth-child(3){
+                    margin-top: 30px;
+                }
+
                 div{
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
+                    @include center (flex , center , space-between);
 
                     h2{
                         line-height: 16px;
@@ -148,16 +147,69 @@
                         }
                     }
                 }
+
+                .hash__list {
+                    @include center (flex , center , none);
+                    flex-wrap: wrap;
+                    gap: 4px;
+                }
+
+                .wrappers {
+                    margin-top: 10px;
+
+                    .wrapper {
+                        @include center (flex , center , none);
+                        margin-top: 10px;
+
+                        .icon{
+                            color: var(--color-text);
+                            font-size: 20px;
+                        }
+
+                        p{
+                            line-height: 110%;
+                            font-size: 12px;
+                            color: var(--color-text);
+                            margin-left: 5px;
+                        }
+
+                        .more{
+                            color: #4FCB8D;
+                            font-weight: 500;
+                            line-height: 14px;
+                            font-size: 12px;
+                            margin-left: 25px;
+                            transition: var(--transition);
+
+                            &:hover{
+                                margin-left: 35px;
+                                color: var(--color-bg-opa);
+                            }
+                        }
+                    }
+
+                    .hash{
+                        @include center (flex , center , none);
+
+                        p{
+                            font-weight: 400;
+                            line-height: 14px;
+                            font-size: 12px;
+                            color: var(--color-text);
+                        }
+
+                        .icon{
+                            color: var(--color-text);
+                            font-size: 16px;
+                        }
+                    }
+                }
             }
         }
     }
 
     // center
-
     .home__pages-center{
-        // position: relative;
-        // width: 600px;
-        // margin-left: 320px;
         
         .top{
             width: 100%;
@@ -168,13 +220,7 @@
     }
 
     // right
-    
     .home__pages-right{
-        // max-width: 282px;
-        // width: 100%;
-        // position: fixed;
-        // right: 10%;
-
 
         .top{
             width: 100%;
