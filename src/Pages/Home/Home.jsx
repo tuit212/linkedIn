@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { AiFillHome , AiOutlineRight } from 'react-icons/ai'
 import { FaUsers } from 'react-icons/fa'
+import { BsFillCalendarDateFill , BsHash } from 'react-icons/bs'
 import './Home.scss'
 
 
@@ -52,8 +53,79 @@ const Home = () => {
                         </div>
                         <ul className="wrappers">
                             <li className="wrapper">
-                                <FaUsers/>
+                                <FaUsers className='icon'/>
                                 <p>UI/UX Design</p>
+                            </li>
+                            <li className="wrapper">
+                                <FaUsers className='icon'/>
+                                <p>UI/UX Design</p>
+                            </li>
+                            <li className="wrapper">
+                                <FaUsers className='icon'/>
+                                <p>UI/UX Design</p>
+                            </li>
+                            <li className="wrapper">
+                                <Link to='/more' className='more'>More</Link>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="bottom-top">
+                        <div>
+                            <h2>Event</h2>
+                            <Link  to='/mynetwork' className='icons'>
+                                <AiOutlineRight className='icon' />
+                            </Link>
+                        </div>
+                        <ul className="wrappers">
+                            <li className="wrapper">
+                                <BsFillCalendarDateFill className='icon'/>
+                                <p>Webinar UI Design at 09:00 am.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="bottom-top">
+                        <div>
+                            <h2>Followed Hastag</h2>
+                            <Link  to='/mynetwork' className='icons'>
+                                <AiOutlineRight className='icon' />
+                            </Link>
+                        </div>
+                        <ul className="wrappers hash__list">
+                            <li className="hash">
+                                <BsHash className='icon'/>
+                                <p>UIDesign</p>
+                            </li>
+                            <li className="hash">
+                                <BsHash className='icon'/>
+                                <p>UIDesign</p>
+                            </li>
+                            <li className="hash">
+                                <BsHash className='icon'/>
+                                <p>UIDes</p>
+                            </li>
+                            <li className="hash">
+                                <BsHash className='icon'/>
+                                <p>UIDesign</p>
+                            </li>
+                            <li className="hash">
+                                <BsHash className='icon'/>
+                                <p>UIDesign</p>
+                            </li>
+                            <li className="hash">
+                                <BsHash className='icon'/>
+                                <p>UIDesign</p>
+                            </li>
+                            <li className="hash">
+                                <BsHash className='icon'/>
+                                <p>UIDesign</p>
+                            </li>
+                            <li className="hash">
+                                <BsHash className='icon'/>
+                                <p>UIDesign</p>
+                            </li>
+                            <li className="hash">
+                                <BsHash className='icon'/>
+                                <p>UIDesign</p>
                             </li>
                         </ul>
                     </div>
@@ -70,7 +142,7 @@ const Home = () => {
             <article className="home__pages-right">
                 <div className="top">
                     <div className="top__img">
-                        {/* <img src="https://images.pexels.com/photos/6390058/pexels-photo-6390058.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" /> */}
+                        
                     </div>
                     <h2>Wawan Purwanto</h2>
                     <p> I have experince 1 year UI/UX Design </p>

@@ -1,0 +1,20 @@
+
+@mixin center ($flex , $center , $space-between){
+    display: $flex;
+    align-items: $center;
+    justify-content: $space-between;
+}
+
+// @include center (flex , center , none);
+
+
+// left position fixed bulgan vaqt va right
+// max-width: 282px;
+// width: 100%;
+// position: fixed;
+// left: 10%;
+
+// center
+// position: relative;
+// width: 600px;
+// margin-left: 320px;
